@@ -209,46 +209,57 @@
             </v-card-text>
           </div>
         </v-card>
+        </v-col>
 
 
-        
-      </v-col>
-      <v-col cols="1"></v-col>
-      <v-col
-          class="mb-5"
-          cols="4"
-          center
-        >
-        <v-card
-          
-          color = "#002856"
-          class="justify-center"
-          max-width="450"
-          height="400"
-        >
-          <div class="text-left">
-            <div class="card-title">Southside Highschool</div>
-            <div class="sub-title">Honors Diploma</div>
-            <br>
-
-            <v-card-text class="text--primary">
-              <br>
-              <v-progress-linear
-                color="green"
-                height="15"
-                model-value="100"
-                rounded
-                striped
-              ></v-progress-linear>
-              Degree Completion
-              <br><br>
-              Grade: 4.0 Cumulative GPA<br><br>
-
-              Southside Mavericks E-Sports Team 2019 - 2021
-            </v-card-text>
+        <v-col cols="1"></v-col>
+        <v-col
+            class="mb-5"
+            cols="4"
+            center
+          >
+          <v-card
+            
+            color = "#B9D9EB"
+            class="justify-center"
+            max-width="450"
+            height="400"
+          >
+          <div class ="float-center">
+            <v-img
+                :aspect-ratio="25/6"
+                src="/src/assets/fsps.png"
+                max-width="600"
+                cover
+              >
+            </v-img>
           </div>
-        </v-card>
-        <v-col cols="2"></v-col>
-      </v-col>
+            <div class="text-left">
+              <div class="sub-title">Southside Highschool</div>
+              <div class="sub-title">Honors Diploma</div>
+              <br>
+
+              <v-card-text class="text--primary">
+                <br>
+                <v-progress-linear
+                  color="green"
+                  height="15"
+                  model-value="100"
+                  rounded
+                  striped
+                ></v-progress-linear>
+                Degree Completion
+                <br><br>
+                Grade: 4.0 Cumulative GPA<br><br>
+
+                Southside Mavericks E-Sports Team 2019 - 2021
+              </v-card-text>
+            </div>
+          </v-card>
+          <v-col cols="2"></v-col>
+        </v-col>
     </v-row>
+
+  <br><br>
+  <h1 class="huge-title">Skills.</h1>
 </template>

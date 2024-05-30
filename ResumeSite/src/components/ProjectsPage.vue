@@ -1,24 +1,4 @@
-<script>
-  export default {
-    data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-github',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-    }),
-  }
-</script>
-
 <style scoped>
-.footer{
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:100px; 
-  text-align: center;
-}
 
 .huge-title {
   font-size: 5em; 
