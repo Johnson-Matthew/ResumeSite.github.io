@@ -251,36 +251,4 @@
         <v-col cols="2"></v-col>
       </v-col>
     </v-row>
-
-    
-    <v-footer
-      class="footer"
-      color="#55a176"
-    >
-      <div>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          :icon="icon"
-          class="mx-4"
-          variant="text"
-        ></v-btn>
-            <br>
-            Copyright © {{ new Date().getFullYear() }} Matt E. Johnson. All rights reserved.
-          
-            The content, design, and graphics on this website are the property of Matt E. Johnson and are protected by intellectual property laws. 
-            The information and materials provided on this website are for the sole 
-            use of visitors to obtain information about our services.
-          
-            You may not reproduce, distribute, modify, transmit, display, perform, publish, license, create derivative works from, transfer,
-            or sell any information or materials obtained from this website without the prior written
-            consent of Matt E. Johnson.
-          
-            Unauthorized use of any content, design, or graphics on this website may violate copyright laws and could result in legal penalties.
-            We reserve the right to take appropriate legal action against any individual or organization found to be 
-            infringing upon our intellectual property rights.
-            <br>
-            {{ new Date().getFullYear() }} — <strong>Matt E. Johnson</strong>
-      </div>
-    </v-footer>
 </template>
