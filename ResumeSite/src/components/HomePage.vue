@@ -8,7 +8,27 @@
         'mdi-instagram',
       ],
     }),
+
+    methods: {
+      onScreenResize() {
+        window.addEventListener("resize", () => {
+          this.updateScreenWidth();
+          this.isSmallWindow = window.innerWidth <= 768;
+        });
+      },
+
+      updateScreenWidth() {
+        this.screenWidth = window.innerWidth;
+      },
+    },
+
+    mounted() {
+      this.updateScreenWidth();
+      this.onScreenResize();
+    },
   }
+
+  
 </script>
 
 <style scoped>
@@ -104,12 +124,6 @@
           Unauthorized use of any content, design, or graphics on this website may violate copyright laws and could result in legal penalties.
           We reserve the right to take appropriate legal action against any individual or organization found to be 
           infringing upon our intellectual property rights.
-        
-          By accessing and using this website, you agree to comply with all copyright laws and acknowledge that any unauthorized use may subject you to civil and criminal liability.
-        
-          For inquiries regarding the use of copyrighted materials or permissions to use specific content, please contact Matt E. Johnson at mattejohnson2004@gmail.com.
-        
-          <br>This copyright statement is subject to change without notice. 
           <br>
           {{ new Date().getFullYear() }} — <strong>Matt E. Johnson</strong>
     </div>
