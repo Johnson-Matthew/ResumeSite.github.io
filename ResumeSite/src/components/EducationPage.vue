@@ -49,7 +49,7 @@
 
   <h1 class="huge-title">Education.</h1>
     <v-row>
-      <v-col cols="4"></v-col>
+      <v-col cols="2"></v-col>
       <v-col
           class="mb-5"
           cols="4"
@@ -59,7 +59,7 @@
           color = "#D7D2CB"
           class="justify-center"
           max-width="600"
-          height="750"
+          height="680"
         >
         <div class ="float-center">
           <v-img
@@ -96,17 +96,11 @@
               Sigma Nu Public Relations 2022 - 2023<br><br>
               UAFS Digital Lions E-Sports Team 2021 - 2023<br><br>
 
-              Skills: Linux System Administration ⋅ CSS ⋅ SQL ⋅ Java ⋅ Linux Kernel ⋅ JavaScript ⋅ Algorithms ⋅ HTML ⋅ Data Structures ⋅ Linux Security ⋅ Formal Languages ⋅ PHP ⋅ MariaDB
-
             </v-card-text>
           </div>
         </v-card>
       </v-col>
-    </v-row>
 
-
-    <v-row>
-      <v-col cols="4"></v-col>
       <v-col
           class="mb-5"
           cols="4"
@@ -116,7 +110,7 @@
           color = "#D7D2CB"
           class="justify-center"
           max-width="600"
-          height="700"
+          height="680"
         >
         <div class ="float-center">
           <v-img
@@ -152,21 +146,17 @@
               Sigma Nu Public Relations 2022 - 2023<br><br>
               UAFS Digital Lions E-Sports Team 2021 - 2023<br><br>
 
-              Skills: Calculus ⋅ Combinatorics ⋅ Linear Algebra ⋅ Speech ⋅ English Composition
-
             </v-card-text>
           </div>
         </v-card>
-
-
-        
       </v-col>
-      <v-col cols="4"></v-col>
+      <v-col cols="2"></v-col>
     </v-row>
-    
-    
+
+
+      
     <v-row>
-        <v-col cols="2"></v-col>
+        <v-col cols="4"></v-col>
         <v-col
           class="mb-5"
           cols="4"
@@ -175,8 +165,8 @@
         <v-card
           color = "#D7D2CB"
           class="justify-center"
-          max-width="450"
-          height="400"
+          max-width="600"
+          height="450"
         >
         <div class ="float-center">
           <v-img
@@ -212,54 +202,13 @@
         </v-col>
 
 
-        <v-col cols="1"></v-col>
-        <v-col
-            class="mb-5"
-            cols="4"
-            center
-          >
-          <v-card
-            
-            color = "#B9D9EB"
-            class="justify-center"
-            max-width="450"
-            height="400"
-          >
-          <div class ="float-center">
-            <v-img
-                :aspect-ratio="25/6"
-                src="/src/assets/fsps.png"
-                max-width="600"
-                cover
-              >
-            </v-img>
-          </div>
-            <div class="text-left">
-              <div class="sub-title">Southside Highschool</div>
-              <div class="sub-title">Honors Diploma</div>
-              <br>
-
-              <v-card-text class="text--primary">
-                <br>
-                <v-progress-linear
-                  color="green"
-                  height="15"
-                  model-value="100"
-                  rounded
-                  striped
-                ></v-progress-linear>
-                Degree Completion
-                <br><br>
-                Grade: 4.0 Cumulative GPA<br><br>
-
-                Southside Mavericks E-Sports Team 2019 - 2021
-              </v-card-text>
-            </div>
-          </v-card>
-          <v-col cols="2"></v-col>
-        </v-col>
+        <v-col cols="4"></v-col>
+       
     </v-row>
 
   <br><br>
   <h1 class="huge-title">Skills.</h1>
+
+
+
 </template>

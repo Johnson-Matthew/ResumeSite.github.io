@@ -20,7 +20,7 @@ export default createVuetify({
           secondary: '#424242', // Replace with your desired secondary color
           accent: '#000000', // Replace with your desired accent color
           error: '#FF5252', // Replace with your desired error color
-          background: '#EEEEEE', // Replace with your desired background color
+          background: '#FFFFFF', // Replace with your desired background color
         }
       },
       

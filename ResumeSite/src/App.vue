@@ -18,7 +18,7 @@
     <v-col cols="4" class="mb-2"></v-col>
 
 
-      <v-col cols="1" class="mb-2">
+      <v-col cols="auto" class="mb-2">
         <router-link :to="{path: '/'}">
           <v-btn  
           style="background-color: #FFFFFF;"
@@ -33,7 +33,7 @@
         </router-link>
       </v-col>
 
-      <v-col cols="1" class="mb-2">
+      <v-col cols="auto" class="mb-2">
         <router-link :to="{path: '/education'}">
           <v-btn  
           style="background-color: #FFFFFF;"
@@ -48,7 +48,7 @@
         </router-link>
       </v-col>
 
-      <v-col cols="1" class="mb-2">
+      <v-col cols="auto" class="mb-2">
         <router-link :to="{path: '/projects'}">
           <v-btn  
           style="background-color: #FFFFFF;"
@@ -64,7 +64,7 @@
       </v-col>
 
 
-      <v-col cols="1" class="mb-2">
+      <v-col cols="auto" class="mb-2">
         <router-link :to="{path: '/about'}">
           <v-btn  
           style="background-color: #FFFFFF;"
@@ -124,12 +124,16 @@
     >
       <div>
         <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          :icon="icon"
+          v-for="icon in socialIcons"
+          :key="icon.name"
+          :icon="icon.icon"
           class="mx-4"
           variant="text"
-        ></v-btn>
+        >
+          <a style="text-decoration: none; color: inherit;" :href="icon.url" target="_blank" rel="noopener noreferrer">
+            <v-icon>{{ icon.icon }}</v-icon>
+          </a>
+        </v-btn>
             <br>
             Copyright © {{ new Date().getFullYear() }} Matt E. Johnson. All rights reserved.
           
@@ -159,13 +163,13 @@ export default {
     color: '#55a176',
     screenWidth: 0,
     isSmallWidow: false,
-    isDarkMode: true,
+    isDarkMode: false,
     theme: useTheme(),
-    icons: [
-      'mdi-facebook',
-      'mdi-github',
-      'mdi-linkedin',
-      'mdi-instagram',
+    socialIcons: [
+      { name: 'facebook', icon: 'mdi-facebook', url: 'https://www.facebook.com/profile.php?id=100063592013642'},
+      { name: 'github', icon: 'mdi-github', url: 'https://github.com/Johnson-Matthew' },
+      { name: 'linkedin', icon: 'mdi-linkedin', url: 'https://www.linkedin.com/in/matt-johnson-378b75220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+      { name: 'instagram', icon: 'mdi-instagram', url: 'https://www.instagram.com/mattiaus?igsh=MWNiZHZiOW9hY2FqMQ==' },
     ],
   }),
 

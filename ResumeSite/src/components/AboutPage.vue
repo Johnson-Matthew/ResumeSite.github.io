@@ -9,6 +9,27 @@
 </style>
 <template>
 
-    <h1 class="huge-title">Projects.</h1>
+  <h1 class="huge-title">About Me.</h1>
+  <v-row>
+  <v-col cols="3"></v-col>
+  <v-col cols=6>
+    <v-carousel show-arrows="hover">
+      <v-carousel-item
+        src="/src/assets/headshot.png"
+        cover
+      ></v-carousel-item>
+
+      <v-carousel-item
+        src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
+        cover
+      ></v-carousel-item>
+
+      <v-carousel-item
+        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+        cover
+      ></v-carousel-item>
+    </v-carousel>
+  </v-col>
+  </v-row>
 
 </template>
