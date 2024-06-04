@@ -171,6 +171,7 @@
           color = "#D7D2CB"
           class="rounded-card"
           max-width="600"
+          min-width="auto"
           height="450"
         >
         <div class ="float-center">

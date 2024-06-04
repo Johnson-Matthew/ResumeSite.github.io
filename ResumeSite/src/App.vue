@@ -49,15 +49,15 @@
       </v-col>
 
       <v-col cols="auto" class="mb-2">
-        <router-link :to="{path: '/projects'}">
+        <router-link :to="{path: '/career'}">
           <v-btn  
           style="background-color: #FFFFFF;"
           rounded
           color="#55a176"
           dark
           >
-            <div class="projectsBtn">
-              <v-icon>mdi-bag-suitcase</v-icon> Projects
+            <div class="careerBtn">
+              <v-icon>mdi-bag-suitcase</v-icon> Career
             </div>
           </v-btn>
         </router-link>
