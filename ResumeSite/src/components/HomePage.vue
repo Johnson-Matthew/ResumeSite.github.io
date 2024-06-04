@@ -41,7 +41,7 @@
 }
 
 .huge-title {
-  font-size: 5em; 
+  font-size: 12em; 
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
@@ -55,14 +55,15 @@
 }
 
 .blurb{
+  font-size: 2em; 
   text-align: center;
 }
 </style>
 <template>
 
   <h1 class="huge-title">Hi, I'm Matt.</h1>
-  <h2 class="blurb">I am a software developer and student from Arkansas, United States.
-                    My focus is web applications and full stack development.</h2>
+  <h2 class="blurb">I am a software developer and student from Arkansas, United States.</h2>
+  <h2 class="blurb">My passion is web applications and full stack development.</h2>
 
   <br><br><br><br>
     <h2 class="medium-title">What's New?</h2>
@@ -114,18 +115,6 @@
         ></v-btn>
       </v-card-actions>
     </v-card>
-  </v-col>
-  <v-col cols="4">
-    <div class ="float-right">
-      <v-img
-          :aspect-ratio="0.6"
-          class="bg-white"
-          src="/src/assets/image-removebg-preview.png"
-          width="500"
-          cover
-        >
-      </v-img>
-    </div>
   </v-col>
   </v-row>
   

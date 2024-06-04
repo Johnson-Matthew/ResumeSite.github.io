@@ -1,7 +1,7 @@
 <style scoped>
 
 .huge-title {
-  font-size: 5em; 
+  font-size: 12em; 
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
@@ -29,13 +29,6 @@
 <script>
   export default {
     data: () => ({
-      cards: [
-        { title: 'Test', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
-        { title: 'Favorite road trips', src: 'https://preview.redd.it/yhbuz0i1o0b91.png?width=640&crop=smart&auto=webp&s=e33d7eee161139adfe8cbcc74cf8116113e539a8', flex: 6 },
-        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
-        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 10 },
-        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 2 },
-      ],
     }),
 
     methods: {
@@ -63,34 +56,46 @@
 
   <h1 class="huge-title">Projects.</h1>
 
-  <v-card
-    class="mx-auto"
-    max-width="1000"
-  >
-    <v-container fluid>
-      <v-row dense>
-        <v-col
-          v-for="card in cards"
-          :key="card.title"
-          :cols="card.flex"
+  <v-row>
+      <v-col cols="3"></v-col>
+      <v-col
+          class="mb-5"
+          cols="6"
+          center
         >
-          <v-card>
-            <v-img
-              :src="card.src"
-              class="align-end"
-              gradient="to bottom, rgba(0,0,0,.4), rgba(0,0,0,.8)"
-              height="200px"
+        <v-card
+          color = "#D7D2CB"
+          class="rounded-card"
+          max-width="900"
+          height="680"
+        >
+        <div class ="float-center">
+          <v-img
+              :aspect-ratio="20/6"
+              src="/src/assets/uafs.png"
+              max-width="600"
               cover
             >
-              <v-card-title class="text-white" v-text="card.title"></v-card-title>
-            </v-img>
+          </v-img>
+        </div>
+        <div class="text-left">
+            <div class="sub-title">Bachelor of Science - Computer Science - Minor in Mathematics</div>
 
-            <v-card-actions>
-              <v-spacer></v-spacer>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-card> 
+            <v-card-text class="text--primary">
+              <br>
+              <v-progress-linear
+                color="green"
+                height="15"
+                model-value="86.69"
+                striped
+                rounded
+              ></v-progress-linear>
+            </v-card-text>
+          </div>
+        </v-card>
+      </v-col>
+      <v-col cols="3"></v-col>
+    </v-row>
+
+
 </template>

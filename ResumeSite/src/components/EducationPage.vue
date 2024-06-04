@@ -21,7 +21,7 @@
 }
 
 .huge-title {
-  font-size: 5em; 
+  font-size: 12em; 
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
@@ -44,6 +44,11 @@
 .blurb{
   text-align: center;
 }
+
+.rounded-card{
+  justify-content: center;
+  border-radius: 30px;
+}
 </style>
 <template>
 
@@ -57,7 +62,7 @@
         >
         <v-card
           color = "#D7D2CB"
-          class="justify-center"
+          class="rounded-card"
           max-width="600"
           height="680"
         >
@@ -108,7 +113,7 @@
         >
         <v-card
           color = "#D7D2CB"
-          class="justify-center"
+          class="rounded-card"
           max-width="600"
           height="680"
         >
@@ -164,7 +169,7 @@
         >
         <v-card
           color = "#D7D2CB"
-          class="justify-center"
+          class="rounded-card"
           max-width="600"
           height="450"
         >

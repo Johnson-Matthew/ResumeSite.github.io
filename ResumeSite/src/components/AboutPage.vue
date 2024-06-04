@@ -1,7 +1,7 @@
 <style scoped>
 
 .huge-title {
-  font-size: 5em; 
+  font-size: 12em; 
   font-weight: bold;
   text-align: center;
   margin-top: 20px;

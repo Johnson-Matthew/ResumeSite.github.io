@@ -165,6 +165,9 @@ export default {
     isSmallWidow: false,
     isDarkMode: false,
     theme: useTheme(),
+    angle: '50',
+    color1: 'red',
+    color2: 'blue',
     socialIcons: [
       { name: 'facebook', icon: 'mdi-facebook', url: 'https://www.facebook.com/profile.php?id=100063592013642'},
       { name: 'github', icon: 'mdi-github', url: 'https://github.com/Johnson-Matthew' },
@@ -176,6 +179,12 @@ export default {
    mounted() {
     this.updateScreenWidth();
     this.onScreenResize();
+  },
+
+  computed: {
+    createBackgroundString() {
+      return `linear-gradient(${this.angle}deg, ${this.color1}, ${this.color2})`;
+    }
   },
 
   methods:{
