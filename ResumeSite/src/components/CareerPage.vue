@@ -54,7 +54,7 @@
 </script>
 <template>
 
-  <h1 class="huge-title">Projects.</h1>
+  <h1 class="huge-title">Career.</h1>
 
   <v-row>
       <v-col cols="3"></v-col>
@@ -69,27 +69,21 @@
           max-width="900"
           height="680"
         >
-        <div class ="float-center">
+        <div class ="float-right">
+        <v-avatar
+          size="175"
+        >
           <v-img
-              :aspect-ratio="20/6"
-              src="/src/assets/uafs.png"
-              max-width="600"
+              src="/src/assets/arcb.png"
               cover
             >
           </v-img>
+        </v-avatar>  
         </div>
         <div class="text-left">
-            <div class="sub-title">Bachelor of Science - Computer Science - Minor in Mathematics</div>
+            <div class="card-title">ArcBest Technologies</div>
 
             <v-card-text class="text--primary">
-              <br>
-              <v-progress-linear
-                color="green"
-                height="15"
-                model-value="86.69"
-                striped
-                rounded
-              ></v-progress-linear>
             </v-card-text>
           </div>
         </v-card>
