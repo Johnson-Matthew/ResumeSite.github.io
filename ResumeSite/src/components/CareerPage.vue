@@ -67,16 +67,15 @@
           color = "#D7D2CB"
           class="rounded-card"
           max-width="900"
-          height="680"
+          height="300"
         >
         <div class ="float-right">
         <v-avatar
-          size="175"
+          size="125px"
         >
           <v-img
-              src="/src/assets/arcb.png"
-              cover
-            >
+            src="/src/assets/arcb.png"
+          >
           </v-img>
         </v-avatar>  
         </div>
