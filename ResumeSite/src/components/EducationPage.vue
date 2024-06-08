@@ -212,8 +212,6 @@
        
     </v-row>
 
-  <br><br>
-  <h1 class="huge-title">Skills.</h1>
 
 
 
