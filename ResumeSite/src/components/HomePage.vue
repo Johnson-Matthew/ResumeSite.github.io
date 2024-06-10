@@ -47,8 +47,25 @@
   margin-top: 20px;
 }
 
+.rounded-card{
+  justify-content: center;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+
+.card-title {
+  font-size: 2em; 
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-text{
+  text-align: center;
+}
+
 .medium-title {
-  font-size: 3em; 
+  font-size: 8em; 
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
@@ -70,12 +87,12 @@
   <br><br><br><br>
 
   <v-row>
-  <v-col cols="1"></v-col>
-  <v-col cols="4">
+  <v-col cols="2"></v-col>
+  <v-col cols="3">
     <a style="text-decoration: none; color: inherit;" href="https://www.bible.com/bible/111/1PE.4.10" target="_blank" rel="noopener noreferrer">
     <v-card
-    class="mx-auto"
-    max-width="344"
+    class="rounded-card"
+    max-width="600"
     color="#55a176"
     >
       <v-card-text>
@@ -88,36 +105,109 @@
     </v-card>
     </a>
   </v-col>
-  <v-col cols="3">
+  <v-col cols="5">
+    <a style="text-decoration: none; color: inherit;" href="/vuetutorial" rel="noopener noreferrer">
     <v-card
-    class="mx-auto"
-    max-width="500"
+        color = "#55a176"
+        class="rounded-card"
+        max-width="900"
+        max-height="900"
+      >
+      <v-row>
+        <v-col cols="12"></v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="1"></v-col>
+        <v-col cols="2">
+          <v-avatar
+          color="#FFFFFF"
+          size="100px"
+          >
+          <v-img
+            src="/src/assets/vuejs.png"
+          >
+          </v-img>
+          </v-avatar>
+        </v-col>
+        <v-col cols="7">
+          <div class="card-title">Getting Started with Vue 3</div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="2"></v-col>
+        <v-col cols="8">
+          <div class="card-text">Short tutorial for creating a Vue 3 project</div>
+          <br>
+        </v-col>
+      </v-row>
+      </v-card>
+      </a>
+      <br>
+  </v-col>
+  <v-col cols="2"></v-col>
+  </v-row>
+  
+  <v-row>
+  <v-col cols="2"></v-col>
+  <v-col cols="3">
+    <a style="text-decoration: none; color: inherit;" href="/about" rel="noopener noreferrer">
+    <v-card
+    class="rounded-card"
+    max-width="600"
+    height="400"
     color="#55a176"
     >
       <v-card-text>
-        <div>Word of the Day</div>
+        <div class="card-title">Motorcycle Progress</div>
 
-        <p class="text-h4 font-weight-black">be•nev•o•lent</p>
-
-        <p>adjective</p>
-
-        <div class="text-medium-emphasis">
-          well meaning and kindly.<br>
-          "a benevolent smile"
-        </div>
+        <p>Image here</p>
       </v-card-text>
-
-      <v-card-actions>
-        <v-btn
-          color="deep-purple-accent-4"
-          text="Learn More"
-          variant="text"
-        ></v-btn>
-      </v-card-actions>
     </v-card>
+    </a>
   </v-col>
+  <v-col cols="5">
+    <a style="text-decoration: none; color: inherit;" href="/linuxtutorial" rel="noopener noreferrer">
+    <v-card
+        color = "#55a176"
+        class="rounded-card"
+        max-width="900"
+        max-height="900"
+      >
+      <v-row>
+        <v-col cols="12"></v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="1"></v-col>
+        <v-col cols="2">
+          <v-avatar
+          color="#FFFFFF"
+          size="100px"
+          >
+          <v-img
+            src="/src/assets/openSUSE.png"
+          >
+          </v-img>
+          </v-avatar>
+        </v-col>
+        <v-col cols="7">
+          <div class="card-title">How to create a Virtual Machine in Linux</div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="2"></v-col>
+        <v-col cols="8">
+          <div class="card-text">Tutorial on how to set up a virutal machine using openSUSE Linux, Apache Web Server, Php8, and Mariadb</div>
+          <br>
+        </v-col>
+      </v-row>
+      </v-card>
+      </a>
+      <br>
+  </v-col>
+  <v-col cols="2"></v-col>
   </v-row>
-  
-
+  <v-row>
+    <br>
+  </v-row>
   
 </template>
