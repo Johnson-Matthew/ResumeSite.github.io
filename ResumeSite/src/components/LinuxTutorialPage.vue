@@ -73,7 +73,56 @@ firewall-cmd --add-service=https --permanent
 firewall-cmd --add-service=http --permanent
 firewall-cmd --reload`;
 
+const databaseSetup = `CREATE USER 'username@localhost' IDENTIFIED BY 'password';
+CREATE DATABASE databaseName;
+GRANT ALL PRIVILEGES ON databaseName.* TO 'username'@'localhost';`;
 
+const webRootFolderSetup = `cd /srv/www/htdocs
+chmod 775 /srv/www/htdocs -R
+chgrp www /srv/www/htdocs -R
+usermod -a -G www userName`
+
+const createTables = `CREATE TABLE TEST(FIRSTNAME VARCHAR(30), LASTNAME VARCHAR(30));
+--Insert Records into table:
+INSERT INTO TESTDATA VALUES('Test', 'User');
+INSERT INTO TESTDATA VALUES('ABC', 'XYZ'); 
+--Show all records from table:
+SELECT * FROM TESTDATA;`;
+
+const html = `<!-- Test.html -->
+<html> 
+<head>
+  <title>This is a test</title>
+  <style type="text/css">
+    .mystyle1 {
+    border: 3px solid red;
+    padding: 10px;
+    padding-top: 30px;
+    margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My First Web App</h1>
+  <p>This is a paragraph</p>
+  <div class="mystyle1">This is a box</div>
+  <form method="GET" action="./form.php">
+    <p>First Name:</p>
+    <input type="text" name="txtFirstName">
+    <p>Last Name:</p>
+    <input type="text" name="txtLastName">
+    <input type="submit" value="Submit Form">
+  </form>
+</body>
+</html>`;
+
+const php = `//form.php
+<?php
+  $fname = $_GET["txtFirstName"];
+  $lname = $_GET["txtLastName"];
+  echo "Hello";
+  echo $fname . " " . $lname;
+?>`
 </script>
 
 
@@ -85,7 +134,7 @@ firewall-cmd --reload`;
             <v-card
             class="rounded-card"
             max-width="1800"
-            color="#55a176"
+            color="#D7D2CB"
             >
             <div class="card-title">Virtual Machine Installation</div>
             <br>
@@ -113,6 +162,7 @@ firewall-cmd --reload`;
             <div class="card-text">- yast (Software > Software management)</div>
             <div class="card-text">⦿ Starting/Stopping Services</div>
             <br>
+
             <VCodeBlock
             class="codeBlock"
             :code="serverSetup"
@@ -120,7 +170,9 @@ firewall-cmd --reload`;
             lang="shell"
             theme="github-dark"
             ></VCodeBlock>
-            <div class="card-sub-title">Configure Firewall</div>
+            <br>
+            
+            <div class="card-title">Configure Firewall</div>
             <VCodeBlock
             class="codeBlock"
             :code="firewallSetup"
@@ -129,11 +181,68 @@ firewall-cmd --reload`;
             theme="github-dark"
             ></VCodeBlock>
             <br>
+
             <div class="card-title">Configuring Database Server</div>
             <div class="card-text">⦿ First ensure that the database server is running.</div>
-            <div class="card-text">⦿ From the command line, use the 'mysql' command</div>
+            <div class="card-text">⦿ From the command line, use the 'mysql' command to use mariadb.</div>
+            <VCodeBlock
+            class="codeBlock"
+            :code="databaseSetup"
+            highlightjs
+            lang="SQL"
+            theme="github-dark"
+            ></VCodeBlock>
+            <br>
+
+            <div class="card-title">Web Root Folder Permissions</div>
+            <div class="card-text">⦿ Navigate to the web root folder of your chosen Linux ISO. openSuSE's default folder is /srv/www/htdocs.</div>
+            <VCodeBlock
+            class="codeBlock"
+            :code="webRootFolderSetup"
+            highlightjs
+            lang="shell"
+            theme="github-dark"
+            ></VCodeBlock>
+            <div class="card-text">⦿ To see if the web server is running, you should be able to access the phpMyAdmin application at 'https://someIPaddress/phpMyAdmin/'</div>
+            <br>
+
+            <div class="card-title">Example Application</div>
+            <div class="card-text">⦿ Now that we have configured our virutal machine. We will create and host a basic web application with it.</div>
+            <div class="card-text">⦿ Navigate to the web root folder of your chosen Linux ISO. openSuSE's default folder is /srv/www/htdocs.</div>
+            <div class="card-text">⦿ From the command line, use the 'mysql' command to use mariadb.</div>
+            <div class="card-text">⦿ Create tables within database:</div>
+            <VCodeBlock
+            class="codeBlock"
+            :code="createTables"
+            highlightjs
+            lang="SQL"
+            theme="github-dark"
+            ></VCodeBlock>
+            <br>
+
+            <div class="card-text">⦿ Create a simple web application:</div>
+            <VCodeBlock
+            class="codeBlock"
+            :code="html"
+            highlightjs
+            lang="HTML"
+            theme="github-dark"
+            ></VCodeBlock>
+            <br>
+
+            <VCodeBlock
+            class="codeBlock"
+            :code="php"
+            highlightjs
+            lang="PHP"
+            theme="github-dark"
+            ></VCodeBlock>
+            <br>
+
+            <h2 style="text-align:center">You should now have a basic web application hosted on your Linux virtual machine. Happy Coding!</h2>
 
             </v-card>
+            <br><br>
         </v-col>
     </v-row>
 </template>
