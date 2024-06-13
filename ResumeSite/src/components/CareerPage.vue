@@ -224,11 +224,13 @@
         <v-col cols="1"></v-col>
         <v-col cols="2">
           <v-avatar
-          color="#55a176"
           size="100px"
           >
-          <div class="avatar-title">?</div>         
-         </v-avatar>
+            <v-img
+              src="/src/assets/hccwlogo.png"
+            >
+            </v-img>
+          </v-avatar>
         </v-col>
         <v-col cols="6">
           <div class="card-title">Hutchins Cleaning LLC</div>

@@ -20,12 +20,17 @@
       ></v-carousel-item>
 
       <v-carousel-item
-        src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
+        src="/src/assets/rebel.jpg"
         cover
       ></v-carousel-item>
 
       <v-carousel-item
-        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+        src="/src/assets/chopper.jpg"
+        cover
+      ></v-carousel-item>
+
+      <v-carousel-item
+        src="/src/assets/IMG_1180.jpg"
         cover
       ></v-carousel-item>
     </v-carousel>
