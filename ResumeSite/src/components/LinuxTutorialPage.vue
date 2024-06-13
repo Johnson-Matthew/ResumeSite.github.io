@@ -142,7 +142,7 @@ const php = `//form.php
             <div class="card-text">⦿ Create a virtual machine with a bridged adapter or using port forwarding.</div>
             <div class="card-text">- It is recommended to have a disk size of at least 32 GB.</div>
             <br>
-            <div class="card-title">Software Installation</div>
+            <div class="card-title">Software Installation</div><br>
             <div class="card-text">⦿ Using zypper package manager in the command line install apache2, php8, php8-mysql, phpMyAdmin, and mariadb.</div>
             <br>
             <VCodeBlock
@@ -153,7 +153,7 @@ const php = `//form.php
             theme="github-dark"
             ></VCodeBlock>
             <br>
-            <div class="card-title">Linux Web Servers</div>
+            <div class="card-title">Linux Web Servers</div><br>
             <div class="card-text">⦿ Linux has many web servers that can be tailored to specific demands. For this example we will be using Apache web server.</div>
             <div class="card-text">⦿ The Apache web server listens on port 80 for unencrypted traffic and port 443 for encrypted traffic. 
             This is important to note if you are using port forwarding as well as for firewall configuration.</div>
@@ -171,8 +171,8 @@ const php = `//form.php
             theme="github-dark"
             ></VCodeBlock>
             <br>
-            
-            <div class="card-title">Configure Firewall</div>
+
+            <div class="card-title">Configure Firewall</div><br>
             <VCodeBlock
             class="codeBlock"
             :code="firewallSetup"
@@ -182,9 +182,10 @@ const php = `//form.php
             ></VCodeBlock>
             <br>
 
-            <div class="card-title">Configuring Database Server</div>
+            <div class="card-title">Configuring Database Server</div><br>
             <div class="card-text">⦿ First ensure that the database server is running.</div>
             <div class="card-text">⦿ From the command line, use the 'mysql' command to use mariadb.</div>
+            <br>
             <VCodeBlock
             class="codeBlock"
             :code="databaseSetup"
@@ -194,8 +195,9 @@ const php = `//form.php
             ></VCodeBlock>
             <br>
 
-            <div class="card-title">Web Root Folder Permissions</div>
+            <div class="card-title">Web Root Folder Permissions</div><br>
             <div class="card-text">⦿ Navigate to the web root folder of your chosen Linux ISO. openSuSE's default folder is /srv/www/htdocs.</div>
+            <br>
             <VCodeBlock
             class="codeBlock"
             :code="webRootFolderSetup"
@@ -206,11 +208,12 @@ const php = `//form.php
             <div class="card-text">⦿ To see if the web server is running, you should be able to access the phpMyAdmin application at 'https://someIPaddress/phpMyAdmin/'</div>
             <br>
 
-            <div class="card-title">Example Application</div>
+            <div class="card-title">Example Application</div><br>
             <div class="card-text">⦿ Now that we have configured our virutal machine. We will create and host a basic web application with it.</div>
             <div class="card-text">⦿ Navigate to the web root folder of your chosen Linux ISO. openSuSE's default folder is /srv/www/htdocs.</div>
             <div class="card-text">⦿ From the command line, use the 'mysql' command to use mariadb.</div>
             <div class="card-text">⦿ Create tables within database:</div>
+            <br>
             <VCodeBlock
             class="codeBlock"
             :code="createTables"
@@ -221,6 +224,7 @@ const php = `//form.php
             <br>
 
             <div class="card-text">⦿ Create a simple web application:</div>
+            <br>
             <VCodeBlock
             class="codeBlock"
             :code="html"

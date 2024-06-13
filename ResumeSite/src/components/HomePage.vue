@@ -75,6 +75,11 @@
   font-size: 2em; 
   text-align: center;
 }
+
+.verseText{
+  font-size: 2ex;
+  text-align: left;
+}
 </style>
 <template>
 
@@ -93,6 +98,7 @@
     <v-card
     class="rounded-card"
     max-width="600"
+    height="195"
     color="#55a176"
     >
       <v-card-text>
@@ -100,7 +106,8 @@
 
         <p class="text-h4 font-weight-black">Each of you</p>
 
-        <p>should use whatever gift you have received to serve others, as faithful stewards of God's grace in its various forms.</p>
+        <p class="verseText">should use whatever gift you have received to serve others, as faithful stewards of God's grace in its various forms.</p>
+        <p class="verseText">NIV</p>
       </v-card-text>
     </v-card>
     </a>
@@ -154,13 +161,21 @@
     <v-card
     class="rounded-card"
     max-width="600"
-    height="400"
+    height="650"
     color="#55a176"
     >
       <v-card-text>
         <div class="card-title">Motorcycle Progress</div>
-
-        <p>Image here</p>
+        <br>
+        <div class ="float-center">
+          <v-img
+              src="/src/assets/rebel.jpg"
+              max-width="600"
+              rounded
+              cover
+            >
+          </v-img>
+        </div>
       </v-card-text>
     </v-card>
     </a>
@@ -202,6 +217,31 @@
       </v-row>
       </v-card>
       </a>
+      <br><br>
+      
+      <v-card
+        color = "#55a176"
+        class="rounded-card"
+        max-width="900"
+        height="368"
+      >
+      <v-row>
+        <v-col cols="12"></v-col>
+      </v-row>
+
+      <v-card-text>
+        <br>
+        <div class ="float-center">
+          <v-img
+              src="/src/assets/chopper.jpg"
+              max-height="300"
+              rounded
+              cover
+            >
+          </v-img>
+        </div>
+      </v-card-text>
+      </v-card>
       <br>
   </v-col>
   <v-col cols="2"></v-col>
