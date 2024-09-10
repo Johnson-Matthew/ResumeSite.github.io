@@ -293,13 +293,13 @@
           'Course Name': 'Artificial Intelligence',
           'Course Number': 'CS 3113',
           Semester: 'Summer 2024',
-          Grade: '-'
+          Grade: 'A'
         },
         {
           'Course Name': 'Formal Languages',
           'Course Number': 'CS 4043',
           Semester: 'Summer 2024',
-          Grade: '-'
+          Grade: 'C'
         },
         {
           'Course Name': 'Distributed Systems',
