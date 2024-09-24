@@ -69,7 +69,7 @@
         <div class ="float-center">
           <v-img
               :aspect-ratio="20/6"
-              src="/src/assets/uafs.png"
+              src="/ResumeSite.github.io/src/assets/uafs.png"
               max-width="600"
               cover
             >
@@ -120,7 +120,7 @@
         <div class ="float-center">
           <v-img
               :aspect-ratio="20/6"
-              src="/src/assets/uafs.png"
+              src="/ResumeSite.github.io/src/assets/uafs.png"
               max-width="600"
               cover
             >
@@ -177,7 +177,7 @@
         <div class ="float-center">
           <v-img
               :aspect-ratio="20/6"
-              src="/src/assets/uafs.png"
+              src="/ResumeSite.github.io/src/assets/uafs.png"
               max-width="600"
               cover
             >

@@ -113,7 +113,7 @@
     </a>
   </v-col>
   <v-col cols="5">
-    <a style="text-decoration: none; color: inherit;" href="/vuetutorial" rel="noopener noreferrer">
+    <a style="text-decoration: none; color: inherit;" href="/ResumeSite.github.io/vuetutorial" rel="noopener noreferrer">
     <v-card
         color = "#55a176"
         class="rounded-card"
@@ -131,7 +131,7 @@
           size="100px"
           >
           <v-img
-            src="/src/assets/vuejs.png"
+            src="/ResumeSite.github.io/src/assets/vuejs.png"
           >
           </v-img>
           </v-avatar>
@@ -157,7 +157,7 @@
   <v-row>
   <v-col cols="2"></v-col>
   <v-col cols="3">
-    <a style="text-decoration: none; color: inherit;" href="/about" rel="noopener noreferrer">
+    <a style="text-decoration: none; color: inherit;" href="/ResumeSite.github.io/about" rel="noopener noreferrer">
     <v-card
     class="rounded-card"
     max-width="600"
@@ -169,7 +169,7 @@
         <br>
         <div class ="float-center">
           <v-img
-              src="/src/assets/rebel.jpg"
+              src="/ResumeSite.github.io/src/assets/rebel.jpg"
               max-width="600"
               rounded
               cover
@@ -181,7 +181,7 @@
     </a>
   </v-col>
   <v-col cols="5">
-    <a style="text-decoration: none; color: inherit;" href="/linuxtutorial" rel="noopener noreferrer">
+    <a style="text-decoration: none; color: inherit;" href="/ResumeSite.github.io/linuxtutorial" rel="noopener noreferrer">
     <v-card
         color = "#55a176"
         class="rounded-card"
@@ -199,7 +199,7 @@
           size="100px"
           >
           <v-img
-            src="/src/assets/openSUSE.png"
+            src="/ResumeSite.github.io/src/assets/openSUSE.png"
           >
           </v-img>
           </v-avatar>
@@ -233,7 +233,7 @@
         <br>
         <div class ="float-center">
           <v-img
-              src="/src/assets/chopper.jpg"
+              src="/ResumeSite.github.io/src/assets/chopper.jpg"
               max-height="300"
               rounded
               cover
