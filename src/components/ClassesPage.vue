@@ -323,7 +323,7 @@
           'Course Name': 'Information Tech Internship',
           'Course Number': 'CS 4913',
           Semester: 'Fall 2024',
-          Grade: '-'
+          Grade: 'A'
         },
       ],
     }),
