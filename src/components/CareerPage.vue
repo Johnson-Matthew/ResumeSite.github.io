@@ -124,7 +124,7 @@
           size="100px"
           >
           <v-img
-            src="/src/assets/arcb.png"
+            src="/ResumeSite.github.io/src/assets/arcb.png"
           >
           </v-img>
           </v-avatar>
@@ -227,7 +227,7 @@
           size="100px"
           >
             <v-img
-              src="/src/assets/hccwlogo.png"
+              src="/ResumeSite.github.io/src/assets/hccwlogo.png"
             >
             </v-img>
           </v-avatar>

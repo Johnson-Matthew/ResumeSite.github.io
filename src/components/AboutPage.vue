@@ -15,22 +15,22 @@
   <v-col cols=6>
     <v-carousel show-arrows="hover">
       <v-carousel-item
-        src="/src/assets/headshot.png"
+        src="/ResumeSite.github.io/src/assets/headshot.png"
         cover
       ></v-carousel-item>
 
       <v-carousel-item
-        src="/src/assets/rebel.jpg"
+        src="/ResumeSite.github.io/src/assets/rebel.jpg"
         cover
       ></v-carousel-item>
 
       <v-carousel-item
-        src="/src/assets/chopper.jpg"
+        src="/ResumeSite.github.io/src/assets/chopper.jpg"
         cover
       ></v-carousel-item>
 
       <v-carousel-item
-        src="/src/assets/IMG_1180.jpg"
+        src="/ResumeSite.github.io/src/assets/IMG_1180.jpg"
         cover
       ></v-carousel-item>
     </v-carousel>
